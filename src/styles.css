@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Herr+Von+Muellerhoff&family=League+Gothic:wdth@75..100&family=Meie+Script&family=Passion+One:wght@400;700;900&family=Squada+One&display=swap');
-
+@import url("https://use.typekit.net/ufc4ccd.css");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Herr+Von+Muellerhoff&family=League+Gothic:wdth@75..100&family=Meie+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Squada+One&display=swap');
 /*
 
 Fonts in use:
@@ -10,7 +11,9 @@ Fonts in use:
 5. Meie Script [in consideration for accent font]
 6. Passion One
 7. Squada One
-
+8. Montserrat
+typekit
+9. Yaldevi
 */
 
 body {
@@ -83,7 +86,109 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+  /*<uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900
+  */
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hover-italic {
+    text-decoration: none;
+    color: #404050;
+    transition: all 0.2 ease;
+  }
+
+  .hover-italic-underline {
+    text-decoration: none;
+    color: #606070;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.hover-italic-underline:hover {
+    font-style: italic;
+    color: #303040;
+}
+
+.hover-italic-underline::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #303040;
+    transition: width 0.3s ease;
+}
+
+.hover-italic-underline:hover::after {
+    width: 100%;
+}
+  .hover-italic:hover {
+    font-style: italic;
+    color: #303040;
+  }
+
+  .yaldevi-extra-light {
+    font-family: "yaldevi", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .yaldevi-light {
+    font-family: "yaldevi", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .yaldevi-regular {
+    font-family: "yaldevi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .inria-serif-light {
+    font-family: "inria-serif", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .inria-serif-light-italic {
+    font-family: "inria-serif", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .inria-serif-regular {
+    font-family: "inria-serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .inria-serif-italic {
+    font-family: "inria-serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .inria-serif-bold {
+    font-family: "inria-serif", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
   
+  .inria-serif-bold-italic {
+    font-family: "inria-serif", serif;
+    font-weight: 700;
+    font-style: italic;
+  } 
 
 @keyframes moveBackground {
     0% { background-size: 100% 100%; }
