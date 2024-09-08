@@ -105,37 +105,42 @@ body {
   }
 
   .hover-italic-underline {
-    text-decoration: none;
-    color: #606070;
-    transition: color 0.3s ease, transform 0.3s ease;
-    position: relative;
-    font-weight: 500;
+    text-decoration: none;  /* Remove any default underline or decoration */
+    color: #606070;       /* Set initial text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color change */
+    position: relative;     /* Establish a positioning context for the pseudo-element */
+    font-weight: 500;       /* Set font weight */
 }
 
 .hover-italic-underline:hover {
-    font-style: normal; /* change to italic if needed */
-    color: #303040;
+    font-style: normal; /* change to italic if needed */ /* Apply italic style on hover */
+    color: #303040;   /* Change text color on hover */
 }
 
 .hover-italic-underline::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #303040;
-    transition: width 0.3s ease;
+    content: '';                  /* Create an empty pseudo-element */
+    position: absolute;           /* Position the pseudo-element absolutely */
+    width: 0;                     /* Start with zero width */
+    height: 2px;                  /* Set the height of the underline */
+    bottom: -4px;                 /* Position it slightly below the text */
+    left: 0;                      /* Align it to the left edge of the text */
+    background-color: #303040;  /* Set the color of the underline */
+    transition: width 0.3s ease;  /* Smooth transition for width change */
 }
 
 .hover-italic-underline:hover::after {
-    width: 100%;
-}
-  .hover-italic:hover {
-    font-style: italic;
-    color: #303040;
+    width: 100%;                  /* Expand the underline to full width on hover */
   }
 
+.hover-italic:hover {
+  font-style: italic;
+  color: #303040;
+}
+
+  .hover-italic-underline svg {
+    text-decoration: none;
+    background: none;
+}
   .yaldevi-extra-light {
     font-family: "yaldevi", sans-serif;
     font-weight: 200;
@@ -290,3 +295,35 @@ font-style: normal;
 .text-animation {
     animation: fadeInText 1.5s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  /* Adjust font sizes and padding for smaller screens */
+  .contact-link {
+      font-size: 1.2rem;
+  }
+}
+
+.button-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.button-wrapper .copy-button {
+  background: none;
+  border: none;
+  color: #606070;
+  cursor: pointer;
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+  justify-content: center;
+  text-align: center;
+  transition: visibility 0.3s ease; /* Smooth transition */
+}
+
+.button-wrapper .copy-button.hidden {
+  visibility: hidden; /* Hide the button but maintain space */
+}
+

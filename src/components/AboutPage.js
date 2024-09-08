@@ -95,34 +95,31 @@ function AboutPage() {
                     </Quote>
                     <Paragraph className="montserrat-regular text-animation">
                         The process of creating something from nothing has always fascinated me. 
-                        Staring at a blank canvas/page/IDE and bringing an idea or a feeling/goal 
+                        Staring at a blank screen or page and bringing an idea or a goal 
                         to life where there was nothing. I've followed that feeling through my 
                         childhood until now through all of my endeavours. As an art student, an 
-                        avid reader and writer, and later as a frontend developer and software 
-                        engineeer, I've always been drawn to the process of realizing an idea in 
+                        avid reader and writer, and later as a software engineer and a frontend developer, 
+                        I've always been drawn to the process of actualizing an idea in 
                         a way that's tangible and presentable to others.
                     </Paragraph>
                     <Paragraph className="montserrat-regular text-animation">
-                        Something about finding a medium that's stuck....
-                        At this point, I've gone from fashioning things out charcoal, clay, paint, 
-                        or words into fashioning my ideas out of code. I've worked with both 
+                        In search of the perfect medium, I've gone from fashioning things out charcoal, clay, 
+                        and even words into fashioning my ideas out of code. I've worked with both 
                         frontend and backend technologies such as AWS, Laravel, React, Flutter, 
-                        etc. and found my calling in frontend development, as the cusp ? of/between 
-                        my creative mind and programming skills/knowledge. I enjoy the ease of 
-                        watching ideas come to life in a few lines, and, most of all, knowing that 
-                        they serve a purpose that impact how people interact with technology and 
+                        etc. and found my calling in frontend development, as the cusp between 
+                        my creative mind and programming skills. I enjoy the ease of watching ideas 
+                        come to life in a few lines, and, most of all, knowing that 
+                        these ideas serve a purpose and impact how people interact with technology and 
                         the online world.
                     </Paragraph>
                     <Paragraph className="montserrat-regular text-animation">
-                        I love being a puzzle piece that is part of a bigger picture, working 
-                        designers, backend developers, and others to help businesses and users in 
+                        I love being a puzzle piece that is part of a bigger picture, working with 
+                        designers, backend developers, and other stakeholders to help businesses and users in 
                         equal measure in achieving their goals and improving their experiences. 
                         "Every child is an artist," as Pablo Picasso said, that certainly rings 
                         true for me. And as for the problem of "how to remain an artist once we grow 
-                        up," I've finally found my solution/answer and purpose in helping others 
-                        achieve their end goals? creative goals? design goals? through frontend 
-                        development.
-
+                        up," I've finally found my answer and purpose in helping others achieve their 
+                        creative and business goals through frontend development.
                     </Paragraph>
                 </TextSection>
                 <ProfileImage
