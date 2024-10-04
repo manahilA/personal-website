@@ -123,6 +123,7 @@ function AboutPage() {
                     </Paragraph>
                 </TextSection>
                 <ProfileImage
+                    className="text-animation"
                     src={profileImage}
                     alt="Profile picture of Manahil Awan"
                 />

@@ -136,6 +136,8 @@ function ContactPage() {
                             fontSize: 'clamp(1.3rem, 2.5vw, 2rem)',
                             display: 'flex',
                             alignItems: 'center',
+                            width: '115px', /* Set a fixed width */
+    textAlign: 'center', /* Center text if necessary */
                         }}>
                             <FaCopy style={{ marginRight: '0.5rem' }} />
                             {buttonText}
