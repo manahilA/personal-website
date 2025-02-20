@@ -21,7 +21,7 @@ function Background() {
                 radial-gradient(circle at 0% 0%, hsla(343,100%,87%,0.6) 0px, transparent 50%)`,
             backgroundSize: '150% 150%',
             filter: 'blur(80px)',
-            animation: 'moveBackground 10s linear infinite',
+            animation: 'moveBackground 20s linear infinite',
         }}></div>
     );
 }
