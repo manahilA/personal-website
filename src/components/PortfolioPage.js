@@ -8,24 +8,21 @@ import ProjectImageOne from '../assets/images/project1.jpeg'; // Update with the
 function PortfolioPage() {
     const projects = [
         { 
-            title: "project 1", 
+            title: "Coming Soon", 
             image: ProjectImageOne
         },
-        { title: "project 2", image: ProjectImageOne },
-        { title: "project 3", image: ProjectImageOne },
-        { title: "project 4", image: ProjectImageOne },
-        { title: "project 5", image: ProjectImageOne },
-        { title: "project 6", image: ProjectImageOne },
+        { title: "Coming Soon", image: ProjectImageOne },
+        { title: "Coming Soon", image: ProjectImageOne }
     ];
 
     const scrollRef = useRef(null);
 
     const scrollLeft = () => {
-        scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+        scrollRef.current.scrollBy({ left: -400, behavior: 'smooth' });
     };
 
     const scrollRight = () => {
-        scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+        scrollRef.current.scrollBy({ left: 400, behavior: 'smooth' });
     };
 
     return (
@@ -50,81 +47,73 @@ function PortfolioPage() {
                 MA
             </Link>
 
-            {/* Inner Frame for the Project Tiles */}
             <div style={{
                 position: 'relative',
                 zIndex: 1,
                 display: 'flex',
-                justifyContent: 'center',  // Center horizontally
-                alignItems: 'center',  // Center vertically
+                justifyContent: 'center',
+                alignItems: 'center',
                 height: '100%',
                 width: '100%',
                 padding: '0',
                 margin: '0',
-                overflow: 'hidden',
+                overflow: 'hidden', // Hides the scrollbar
             }}>
-                {/* Smaller "Window" for the projects */}
                 <div style={{
-                    width: '70%',  // Inner frame width (adjust as needed)
-                    height: '70%',  // Inner frame height (adjust as needed)
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',  // Subtle shadow for the frame effect
-                    overflowX: 'auto',  // Allow horizontal scrolling inside the smaller frame
+                    width: '80%',
+                    height: '80%',
+                    overflowX: 'auto',
                     scrollBehavior: 'smooth',
                     display: 'flex',
+                    gap: '20px',
                     position: 'relative',
+                    msOverflowStyle: 'none', // Hides scroll bar in IE/Edge
+                    scrollbarWidth: 'none', // Hides scroll bar in Firefox
                 }} ref={scrollRef}>
                     {projects.map((project, index) => (
-                        <div key={index} className="portfolio-tile" style={{
-                            backgroundColor: '#d9c1ba',  // Softer, more lilac color
+                        <div key={index} className="project-tile" style={{
+                            backgroundColor: '#e6e1dc',
                             color: '#404050',
                             position: 'relative',
                             overflow: 'hidden',
                             cursor: 'pointer',
-                            width: '280px',
+                            width: '450px',
                             height: '100%',  
                             flexShrink: '0',
-                            borderRadius: '0px',
+                            borderRadius: '10px',
                             display: 'flex',
                             justifyContent: 'center',
-                            border: '0px solid rgba(64, 64, 80, 0.1)',
-                            boxShadow: 'inset -0.7px 0 0 rgba(64, 64, 80, 0.2)',
+                            alignItems: 'center',
+                            border: 'none',
+                            boxShadow: '0px 2px 5px rgba(64, 64, 80, 0.1)',
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            backgroundImage: 'none',  // No image initially
-                        }}
-                        onMouseEnter={(e) => {
-                            e.currentTarget.style.backgroundImage = `url(${project.image})`;  // Show image on hover
-                        }}
-                        onMouseLeave={(e) => {
-                            e.currentTarget.style.backgroundImage = 'none';  // Revert to plain color on hover exit
+                            backgroundImage: `url(${project.image})`,
                         }}>
-                            {/* Title always visible, you can choose to remove this if you want */}
                             <h2 className="meie-script-regular" style={{
-                                fontSize: 'clamp(2rem, 4vw, 2.5rem)',
+                                fontSize: 'clamp(2.5rem, 4vw, 3rem)',
                                 margin: '0',
-                                textAlign: 'center', // Center the title text
+                                textAlign: 'center',
                                 color: '#404050',
                                 zIndex: 2,
-                                position: 'absolute', // Position absolutely within the tile
-                                bottom: '10%', // Place title at the bottom
-                                left: '50%', // Center horizontally
-                                transform: 'translateX(-50%)', // Center the title text
-                                textShadow: '1px 1px 2px rgba(255, 255, 255, 0.7)', // Optional: add a shadow for better readability
+                                position: 'absolute',
+                                bottom: '10%',
+                                left: '50%',
+                                transform: 'translateX(-50%)',
+                                textShadow: '1px 1px 2px rgba(255, 255, 255, 0.7)',
                             }}>{project.title}</h2>
                         </div>
                     ))}
                 </div>
-
-                {/* Scroll Buttons */}
                 <div style={{
                     position: 'absolute',
-                    top: '50%',  // Align the arrows vertically at the middle of the inner frame
-                    left: '10%',  // Position the left arrow closer to the inner frame
-                    right: '10%',  // Position the right arrow closer to the inner frame
+                    top: '50%',
+                    left: '5%',
+                    right: '5%',
                     display: 'flex',
                     justifyContent: 'space-between',
                     zIndex: 2,
-                    transform: 'translateY(-50%)',  // Keep the buttons vertically centered
+                    transform: 'translateY(-50%)',
                 }}>
                     <button 
                         onClick={scrollLeft} 

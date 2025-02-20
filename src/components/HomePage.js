@@ -43,6 +43,7 @@ function HomePage() {
                 <div className="libre-bodoni-bold text-animation" style={{
                     fontSize: 'clamp(3rem, 8vw, 4rem)',
                     color: '#505060',
+                    wordSpacing: '0.5rem',
                     letterSpacing: '-0.9px'
                 }}>
                     MANAHIL AWAN
@@ -50,6 +51,7 @@ function HomePage() {
                 <div className="libre-bodoni-bold text-animation" style={{
                     fontSize: 'clamp(3rem, 8vw, 4rem)',
                     color: '#303040',
+                    wordSpacing: '0.5rem',
                     letterSpacing: '-0.9px'
                     //marginTop: '0.5rem',
                     //paddingLeft: '10vw',
@@ -65,7 +67,7 @@ function HomePage() {
                 }}>
                     <Link to="/about" className="hover-italic-underline">about</Link>&nbsp;
                     <Link to="/portfolio" className="hover-italic-underline">portfolio</Link>&nbsp;
-                    <a href="https://github.com/manahilA" target="_blank" rel="noopener noreferrer" className="hover-italic-underline">github</a>&nbsp;
+                    <Link to="/resume" className="hover-italic-underline">resume</Link>&nbsp;
                     <Link to="/contact-me" className="hover-italic-underline">contact</Link>&nbsp;
                 </div>
             </div>

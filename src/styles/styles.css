@@ -369,3 +369,55 @@ font-style: normal;
 }
 
 
+.case-studies-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #404050;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.case-study-card {
+  background: #d9c1ba;
+  color: #404050;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.case-study-info {
+  padding: 15px;
+}
+
+.case-study-info h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.case-study-info p {
+  font-size: 1rem;
+  color: #555;
+}

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/AboutPage";
 import ContactPage from "./components/ContactPage";
-import CVPage from "./components/CVPage";
+import ResumePage from "./components/ResumePage";
 import PortfolioPage from "./components/PortfolioPage";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact-me" element={<ContactPage />} />
-                <Route path="/cv" element={<CVPage />} />
+                <Route path="/resume" element={<ResumePage />} />
                 <Route path="/portfolio" element={<PortfolioPage />} />
             </Routes>
         </Router>
